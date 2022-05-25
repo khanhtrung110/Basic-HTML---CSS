@@ -1,0 +1,715 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+html body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+}
+.section{
+    padding: 48px 0px;
+}
+.container{
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+}
+h2{
+    font-size: 36px;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+/* HEADER */
+header{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 10px;
+    background: transparent;
+    position: absolute;
+    z-index: 20;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+}
+.logo{
+    cursor: pointer;
+    width: 100px;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: white;
+}
+.nav-link{
+    list-style: none;
+}
+.nav-link li{
+    display: inline-block;
+    padding: 5px 20px;
+}
+.header .nav-link li:hover{
+    background-color: hsla(0,0%,100%,.2);
+}
+.nav-bars-btn{
+    width: 28px;
+    height: 28px;
+    color: #fff;
+}
+.nav-pc {
+    display: none;
+}
+.nav-mobie{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 280px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    transition: all 0.5s;
+}
+.nav-mobie li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    font-weight: 300;
+}
+.nav-mobie li{
+    list-style: none;
+    padding: 9px 0px;
+}
+.nav__mobie-list{
+    background-color: #fff;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 24px 50px;
+    font-size:10px
+    
+}
+.nav-mobie-close{
+    color:#666;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 0.3rem;
+    left: 16rem;
+}
+.nav_input:checked ~ .nav-mobie{
+    transform: translateX(0);
+}
+header button{
+    background-color: #e83f82;
+    margin-right: 10px;
+    padding: 8px 10px;
+    border: none;
+    outline: none;
+    margin-left: auto;
+    border-radius: 6px;
+    color: white;
+    font-weight: 500;
+}
+
+/* CAROUSEL */
+.carousel{
+    position: relative;
+}
+.carousel__content{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    display: block;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+}
+.carousel img{
+    object-fit: cover;
+    width: 100%;
+    height: 560px;
+}
+.carousel__content h1{
+    color: white;
+}
+.carousel__content p:first-of-type{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 2rem;
+    margin-bottom: 2.2rem;
+    line-height: 38px;
+    color: #fff;
+}
+.carousel__content p:last-of-type{
+    width: 320px;
+    height: 54px;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: #513fe8;
+    border-radius: 12px;
+    line-height: 51px;
+    margin: auto;
+}
+
+/* TRUST */
+.trust-item{
+    display: flex;
+    justify-content: center ;
+    margin-bottom: 10px;
+}
+.trust-item img{
+    display: block;
+    
+    width: auto;
+    height: auto;
+    filter: grayscale(100%);
+     -webkit-filter: grayscale(100%);
+     -moz-filter: grayscale(100%);
+     -ms-filter: grayscale(100%);
+     -o-filter: grayscale(100%);
+     transition: all 0.5s;
+}
+.trust-item img:hover{
+    filter: grayscale(0);
+     -webkit-filter: grayscale(0);
+     -moz-filter: grayscale(0);
+     -ms-filter: grayscale(0);
+     -o-filter: grayscale(0);
+}
+.trust-item{
+    position: relative;
+}
+
+
+/* cryptoCourses */
+.cryptoCourses_search{
+    width: 100%;
+    max-width: 700px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border: 1px solid #b6b6b6;
+    justify-content: space-around;
+    border-radius: 22px;
+    padding: 10px 20px;
+}
+.cryptoCourses .cryptoCourses_search input{
+    background: transparent;
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 4px 11px;
+    font-size: 16px;
+    color: #b6b6b6;
+}
+.cryptoCourses_search input::placeholder{
+    color: #b6b6b6  ;
+}
+.cryptoCourses_search button{
+    background: transparent;
+    border: none;
+    
+}
+.cryptoCourses_search button i{
+    font-size: 22px;
+    background: transparent;
+}
+.cryptoCourses .container {
+    text-align: center;
+}
+
+.container-list{
+  display: flex;
+  justify-content: center;
+  margin: 16px 0 48px;
+  padding: 0 15px;
+}
+.container-list a{
+    font-size: 13px;
+    color: #29303b;
+    font-weight: 400;
+    padding: 10px 15px;
+    margin:0 0 8px;
+    text-decoration: none;
+    line-height: 1.5;
+}
+.container-list a:first-child{
+    color: #3f82e8;
+    font-weight: 700;
+}
+.container-list a:hover {
+    background: #eaecf7;
+}
+.container-list-content a{
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+
+
+/* Responsive */
+.grid {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.grid.wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.c-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -4px;
+    margin-right: -4px;
+}
+
+.row.no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.col {
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.row.no-gutters .col {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.c-0 {
+    display: none;
+}
+
+.c-1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+}
+
+.c-2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+}
+
+.c-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+
+.c-4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.c-5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+}
+
+.c-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.c-7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+}
+
+.c-8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+}
+
+.c-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.c-10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+}
+
+.c-11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+}
+
+.c-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+
+/* >= Tablet */
+@media (min-width: 740px) {
+    .container{
+        max-width: 720px;
+    }
+    .row {
+        margin-left: -8px;
+        margin-right: -8px;
+    }
+
+    .col {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .m-0 {
+        display: none;
+    }
+
+    .m-1,
+    .m-2,
+    .m-3,
+    .m-4,
+    .m-5,
+    .m-6,
+    .m-7,
+    .m-8,
+    .m-9,
+    .m-10,
+    .m-11,
+    .m-12 {
+        display: block;
+    }
+
+    .m-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+
+    .m-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+
+    .m-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .m-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .m-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+
+    .m-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .m-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+
+    .m-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+
+    .m-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .m-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+
+    .m-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+
+    .m-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+   
+}
+
+/* PC medium resolution > */
+@media (min-width: 1113px) {
+    .logo{
+        cursor: pointer;
+        width: 200px;
+    }
+    .nav-bars-btn{
+        display: none;
+    }
+    .carousel__content h1{
+        font-size: 60px;
+    }
+    .carousel__content div p:first-of-type{
+        font-size: 26px;
+    }
+
+
+
+
+
+
+    /* ************************* */
+    .container{
+        max-width: 1140px;
+    }
+    .row {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+
+    .row.sm-gutter {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .col {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .row.sm-gutter .col {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .l-0 {
+        display: none;
+    }
+
+    .l-1,
+    .l-2,
+    .l-2-4,
+    .l-3,
+    .l-4,
+    .l-5,
+    .l-6,
+    .l-7,
+    .l-8,
+    .l-9,
+    .l-10,
+    .l-11,
+    .l-12 {
+        display: block;
+    }
+
+    .l-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+
+    .l-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+
+    .l-2-4 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+    .l-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .l-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .l-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+
+    .l-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .l-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+
+    .l-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+
+    .l-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .l-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+
+    .l-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+
+    .l-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    
+}
+
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .wide {
+        width: 644px;
+    }
+}
+
+/* > PC low resolution */
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .wide {
+        width: 984px;
+    }
+
+    .wide .row {
+        margin-left: -12px;
+        margin-right: -12px;
+    }
+
+    .wide .row.sm-gutter {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+
+    .wide .col {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .wide .row.sm-gutter .col {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .wide .l-0 {
+        display: none;
+    }
+
+    .wide .l-1,
+    .wide .l-2,
+    .wide .l-2-4,
+    .wide .l-3,
+    .wide .l-4,
+    .wide .l-5,
+    .wide .l-6,
+    .wide .l-7,
+    .wide .l-8,
+    .wide .l-9,
+    .wide .l-10,
+    .wide .l-11,
+    .wide .l-12 {
+        display: block;
+    }
+
+    .wide .l-1 {
+        flex: 0 0 8.33333%;
+        max-width: 8.33333%;
+    }
+
+    .wide .l-2 {
+        flex: 0 0 16.66667%;
+        max-width: 16.66667%;
+    }
+
+    .wide .l-2-4 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+
+    .wide .l-3 {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .wide .l-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
+    }
+
+    .wide .l-5 {
+        flex: 0 0 41.66667%;
+        max-width: 41.66667%;
+    }
+
+    .wide .l-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .wide .l-7 {
+        flex: 0 0 58.33333%;
+        max-width: 58.33333%;
+    }
+
+    .wide .l-8 {
+        flex: 0 0 66.66667%;
+        max-width: 66.66667%;
+    }
+
+    .wide .l-9 {
+        flex: 0 0 75%;
+        max-width: 75%;
+    }
+
+    .wide .l-10 {
+        flex: 0 0 83.33333%;
+        max-width: 83.33333%;
+    }
+
+    .wide .l-11 {
+        flex: 0 0 91.66667%;
+        max-width: 91.66667%;
+    }
+
+    .wide .l-12 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+}
+
+
