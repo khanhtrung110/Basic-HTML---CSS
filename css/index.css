@@ -9,7 +9,7 @@ html body{
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: white;
+    color: black;
 }
 .section{
     padding: 48px 0px;
@@ -27,7 +27,46 @@ h2{
     font-weight: 700;
     margin-bottom: 16px;
 }
-
+.button-red{
+        text-align: center;
+        width: 90%;
+        padding: 10px 10px;
+        border-radius: 15px;
+        background-color: #e83f82;
+        font-size: 14px;
+        color: #fff;
+        font-family: 700;
+        outline: none;
+        border: none;
+    } 
+.button-blue-r{
+    display: flex;
+    justify-content: center;
+}
+.button-blue{
+       text-align: center;
+        width: 65%;
+        padding: 15px 10px;
+        border-radius: 15px;
+        background-color: #513fe8;
+        font-size: 20px;
+        color: #fff;
+        font-family: 700;
+        outline: none;
+        border: none;
+}
+.button-green{
+    padding: 10px 16px;
+    background-color: #02bb8c;
+    border:none;
+    border-radius: 5px;
+    padding: 14px 16px;
+    font-size: 16px;
+    line-height: inherit;
+    font-weight: 500;
+    width: 230px;
+    max-width: 100%;
+}
 /* HEADER */
 header{
     display: flex;
@@ -165,6 +204,11 @@ header button{
 }
 
 /* TRUST */
+.trust-content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .trust-item{
     display: flex;
     justify-content: center ;
@@ -227,6 +271,9 @@ header button{
     font-size: 22px;
     background: transparent;
 }
+.cryptoCourses_search{
+    margin-bottom: 48px;
+}
 .cryptoCourses .container {
     text-align: center;
 }
@@ -257,459 +304,399 @@ header button{
     display: inline-block;
     margin-bottom: 8px;
 }
-
-
-
-/* Responsive */
-.grid {
-    width: 100%;
-    display: block;
-    padding: 0;
-}
-
-.grid.wide {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.c-auto{
-    margin-left: auto;
-    margin-right: auto;
-}
-.row {
+.container-list-content{
     display: flex;
-    flex-wrap: wrap;
-    margin-left: -4px;
-    margin-right: -4px;
-}
-
-.row.no-gutters {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-.col {
-    padding-left: 4px;
-    padding-right: 4px;
-}
-
-.row.no-gutters .col {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.c-0 {
-    display: none;
-}
-
-.c-1 {
-    flex: 0 0 8.33333%;
-    max-width: 8.33333%;
-}
-
-.c-2 {
-    flex: 0 0 16.66667%;
-    max-width: 16.66667%;
-}
-
-.c-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
-}
-
-.c-4 {
-    flex: 0 0 33.33333%;
-    max-width: 33.33333%;
-}
-
-.c-5 {
-    flex: 0 0 41.66667%;
-    max-width: 41.66667%;
-}
-
-.c-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-
-.c-7 {
-    flex: 0 0 58.33333%;
-    max-width: 58.33333%;
-}
-
-.c-8 {
-    flex: 0 0 66.66667%;
-    max-width: 66.66667%;
-}
-
-.c-9 {
-    flex: 0 0 75%;
-    max-width: 75%;
-}
-
-.c-10 {
-    flex: 0 0 83.33333%;
-    max-width: 83.33333%;
-}
-
-.c-11 {
-    flex: 0 0 91.66667%;
-    max-width: 91.66667%;
-}
-
-.c-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-
-/* >= Tablet */
-@media (min-width: 740px) {
-    .container{
-        max-width: 720px;
-    }
-    .row {
-        margin-left: -8px;
-        margin-right: -8px;
-    }
-
-    .col {
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-
-    .m-0 {
-        display: none;
-    }
-
-    .m-1,
-    .m-2,
-    .m-3,
-    .m-4,
-    .m-5,
-    .m-6,
-    .m-7,
-    .m-8,
-    .m-9,
-    .m-10,
-    .m-11,
-    .m-12 {
-        display: block;
-    }
-
-    .m-1 {
-        flex: 0 0 8.33333%;
-        max-width: 8.33333%;
-    }
-
-    .m-2 {
-        flex: 0 0 16.66667%;
-        max-width: 16.66667%;
-    }
-
-    .m-3 {
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
-
-    .m-4 {
-        flex: 0 0 33.33333%;
-        max-width: 33.33333%;
-    }
-
-    .m-5 {
-        flex: 0 0 41.66667%;
-        max-width: 41.66667%;
-    }
-
-    .m-6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
-    .m-7 {
-        flex: 0 0 58.33333%;
-        max-width: 58.33333%;
-    }
-
-    .m-8 {
-        flex: 0 0 66.66667%;
-        max-width: 66.66667%;
-    }
-
-    .m-9 {
-        flex: 0 0 75%;
-        max-width: 75%;
-    }
-
-    .m-10 {
-        flex: 0 0 83.33333%;
-        max-width: 83.33333%;
-    }
-
-    .m-11 {
-        flex: 0 0 91.66667%;
-        max-width: 91.66667%;
-    }
-
-    .m-12 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
-   
-}
-
-/* PC medium resolution > */
-@media (min-width: 1113px) {
-    .logo{
-        cursor: pointer;
-        width: 200px;
-    }
-    .nav-bars-btn{
-        display: none;
-    }
-    .carousel__content h1{
-        font-size: 60px;
-    }
-    .carousel__content div p:first-of-type{
-        font-size: 26px;
-    }
-
-
-
-
-
-
-    /* ************************* */
-    .container{
-        max-width: 1140px;
-    }
-    .row {
-        margin-left: -12px;
-        margin-right: -12px;
-    }
-
-    .row.sm-gutter {
-        margin-left: -5px;
-        margin-right: -5px;
-    }
-
-    .col {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    .row.sm-gutter .col {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    .l-0 {
-        display: none;
-    }
-
-    .l-1,
-    .l-2,
-    .l-2-4,
-    .l-3,
-    .l-4,
-    .l-5,
-    .l-6,
-    .l-7,
-    .l-8,
-    .l-9,
-    .l-10,
-    .l-11,
-    .l-12 {
-        display: block;
-    }
-
-    .l-1 {
-        flex: 0 0 8.33333%;
-        max-width: 8.33333%;
-    }
-
-    .l-2 {
-        flex: 0 0 16.66667%;
-        max-width: 16.66667%;
-    }
-
-    .l-2-4 {
-        flex: 0 0 20%;
-        max-width: 20%;
-    }
-
-    .l-3 {
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
-
-    .l-4 {
-        flex: 0 0 33.33333%;
-        max-width: 33.33333%;
-    }
-
-    .l-5 {
-        flex: 0 0 41.66667%;
-        max-width: 41.66667%;
-    }
-
-    .l-6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
-    .l-7 {
-        flex: 0 0 58.33333%;
-        max-width: 58.33333%;
-    }
-
-    .l-8 {
-        flex: 0 0 66.66667%;
-        max-width: 66.66667%;
-    }
-
-    .l-9 {
-        flex: 0 0 75%;
-        max-width: 75%;
-    }
-
-    .l-10 {
-        flex: 0 0 83.33333%;
-        max-width: 83.33333%;
-    }
-
-    .l-11 {
-        flex: 0 0 91.66667%;
-        max-width: 91.66667%;
-    }
-
-    .l-12 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
-
+    
+    overflow-x: scroll;
     
 }
-
-/* Tablet - PC low resolution */
-@media (min-width: 740px) and (max-width: 1023px) {
-    .wide {
-        width: 644px;
-    }
-}
-
-/* > PC low resolution */
-@media (min-width: 1024px) and (max-width: 1239px) {
-    .wide {
-        width: 984px;
-    }
-
-    .wide .row {
-        margin-left: -12px;
-        margin-right: -12px;
-    }
-
-    .wide .row.sm-gutter {
-        margin-left: -5px;
-        margin-right: -5px;
-    }
-
-    .wide .col {
-        padding-left: 12px;
-        padding-right: 12px;
-    }
-
-    .wide .row.sm-gutter .col {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    .wide .l-0 {
-        display: none;
-    }
-
-    .wide .l-1,
-    .wide .l-2,
-    .wide .l-2-4,
-    .wide .l-3,
-    .wide .l-4,
-    .wide .l-5,
-    .wide .l-6,
-    .wide .l-7,
-    .wide .l-8,
-    .wide .l-9,
-    .wide .l-10,
-    .wide .l-11,
-    .wide .l-12 {
-        display: block;
-    }
-
-    .wide .l-1 {
-        flex: 0 0 8.33333%;
-        max-width: 8.33333%;
-    }
-
-    .wide .l-2 {
-        flex: 0 0 16.66667%;
-        max-width: 16.66667%;
-    }
-
-    .wide .l-2-4 {
-        flex: 0 0 20%;
-        max-width: 20%;
-    }
-
-    .wide .l-3 {
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
-
-    .wide .l-4 {
-        flex: 0 0 33.33333%;
-        max-width: 33.33333%;
-    }
-
-    .wide .l-5 {
-        flex: 0 0 41.66667%;
-        max-width: 41.66667%;
-    }
-
-    .wide .l-6 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
-    .wide .l-7 {
-        flex: 0 0 58.33333%;
-        max-width: 58.33333%;
-    }
-
-    .wide .l-8 {
-        flex: 0 0 66.66667%;
-        max-width: 66.66667%;
-    }
-
-    .wide .l-9 {
-        flex: 0 0 75%;
-        max-width: 75%;
-    }
-
-    .wide .l-10 {
-        flex: 0 0 83.33333%;
-        max-width: 83.33333%;
-    }
-
-    .wide .l-11 {
-        flex: 0 0 91.66667%;
-        max-width: 91.66667%;
-    }
-
-    .wide .l-12 {
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
+.cryptoCourses__feature{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+ 
+   
 
 }
+.cryptoCourses__item{
+    background-color: white;
+    width: 80%;
+    height: 400px;
+    margin: 10px auto;
+    color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 15%);
+}
 
+.cryptoCourses__item .card-img{
+    height: 191px;
+    margin-bottom: 0;
+    background-image: url('https://www.bitdegree.org/storage/course-image/youth-crypto-introduction.jpg');
+    background-size: cover;
+}
+.card__content{
+    padding: 8px 15px;
+}
+.card__content span{
+    color: #909396;
+    font-weight: 400;
+    line-height: 12.55px;
+    letter-spacing: .12px;
+    font-size: 10px;
 
+}
+.card__content p{
+    height: 60px;
+    color: #323943;
+    font-weight: 500;
+    line-height: 20.3px;
+    letter-spacing: .15px;
+    font-size: 13px;
+    margin-top: 10px;
+}
+.card__content .card-rating{
+    display: flex;
+    justify-content: space-between;
+}
+.card__content .card-rating i{
+    color: #f4c150;
+}
+.card-free{
+    color: black;
+}
+.cryptoCourses__item button{
+    text-align: center;
+    width: 90%;
+    padding: 10px 10px;
+    border-radius: 15px;
+    background-color: #e83f82;
+    font-size: 14px;
+    color: #fff;
+    font-family: 700;
+    outline: none;
+    border: none;
+} 
+.card-free{
+    display: block;
+    margin-top: 22px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 23px;
+    margin-bottom: 4px;
+}
+.cryptoCourses__item .card-btn-s{
+    display: flex;
+    justify-content: center;
+    
+}
+/* lea */
+.lea__content{
+    color: black;
+}
+.lea__content h2{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #e83f82;
+    letter-spacing: .05em;
+    text-align: center;
+}
+.lea__content p{
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+.lea__content p:first-of-type span{
+    font-weight: 600;
+}
+.lea__content p i{
+    font-size: 18px;
+    color: #e83f82;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.lae-img{
+    max-width: 100%;
+    height: auto;
+}
+/* discord banner */
+.discord-baner{
+    width: 100%;
+    height: 415px;
+    background-image: url('https://www.bitdegree.org/assets/homepage/discord-bg.png');
+    background-size: cover;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.discord-content h2{
+    color: white;
+}
+.discord-content p{
+    margin-bottom: 32px;
+}
+/* cryptoVideo */
+.cypto__video{
+    color: black;
+    text-align: center;
+}
+.cypto__video p{
+    margin-bottom: 16px;
+}
+.cypto__video-content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+.cypto__video-item{
+    padding: 0 15px;
+}
+.cypto__video-item .card-img-top{
+    width: 100%;
+    max-width: 700px;   
+    object-fit: cover;
+}
+.cypto__video-text{
+    text-align: start;
+}
+.cypto__video-text p:first-of-type{
+    font-size: 16px;
+    font-weight: 600;
+    color: #db4437;
+}
+.cypto__video-text p:last-of-type{
+    font-size: 18px;
+    color: #000;
+    font-weight: 600;
+    margin-bottom: 16px;
+}
+.cypto__video-img{
+    position: relative;
+}
+.play-button{
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top:37%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card-img-top{
+    filter: grayscale(.5);
+}
+.cypto__video .button-blue{
+    width: 50%;
+    font-weight: 600;
+    background-color: #02bb8c;
+    border-radius: 30px;
+    padding: 16px 15px;
+}
+/* crypto-exchanges */
+.crypto-exchanges{
+    background-color: #000330;
+}
+.crypto-exchanges .container h2{
+    font-size: 36px;
+    color: #e4e4e4;
+    line-height: 45.5px;
+    font-weight: 700;
+    color: white;
+}
+.crypto-exchanges .container p,.crypto-exchanges .container li{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    color: hsla(0,0%,100%,.8);
+    margin-bottom: 16px;
+}
+.cryptoExchange_text{
+    padding: 0 15px;
+    text-align: center;
+    color: black;
+}
+.cryptoExchange_text p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #29303b;
+    font-weight: 300;
+    padding: 16px;
+}
+.cryptoExchange{
+   
+    margin: 48px auto;
+}
+.cryptoExchange__coupon{
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 15%);
+    padding: 24px;
+    margin: 24px 0;
+    text-align: center;
+}
+/* .coupon_verify */
+.coupon_verify{
+    margin: 16px 0;
+}
+.coupon_verify span:first-of-type{
+    color: #02BB8C;
+}
+.cryptoExchange__coupon h2{
+    margin: 0;
+}
+.cryptoExchange__coupon h5{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 16px;
+}
+.coupon_verify span:last-of-type{
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12px;
+    color: #fff;
+    background: #e9385a;
+    border-radius: 3px;
+    letter-spacing: -.5px;
+    padding: 5px ;
+}
+.cryptoExchange__coupon p:first-of-type a{
+    color: #02bb8c;
+    text-decoration: none;
+}
+.cryptoExchange__coupon p:nth-of-type(2){
+    color:black;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 300;
+    margin-bottom: 16px;
+}
+.coupon_time span{
+    color: #6c757d;
+    font-size: 12px;
+    font-weight: 300;
+    margin-right: 16px;
+
+}
+.coupon_time span:last-of-type{
+    color: #e9385a  ;
+}
+.coupon_rating{
+    color: black;
+    margin-top: 24px;
+}
+.coupon_rating-start i{
+    color: #f4c150;
+    font-weight: 900;
+    font-size: 24px;
+}
+.coupon_rating-start{
+    margin-bottom: 10px;
+}
+.coupon_rating p:first-of-type{
+    color: #6c757d;
+    font-size: 14px;
+    margin-bottom: 9px;
+}
+.coupon_rating-start span:first-of-type{
+    font-size: 24px;
+    margin-right: 8px;
+}
+.cryptoExchange .button-green{
+    color: white;
+}
+.cryptoExchange p:last-of-type a{
+    color: #02bb8c;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+.cryptoExchange__coupon .button-green{
+    margin-bottom: 13px;
+ }
+ /* comparison-table */
+ .comparison-table-wrapper-fix{
+     overflow-x: scroll;
+ }
+ .comparison-table-wrapper{
+     width: 100%;
+     margin-bottom: 30px;
+ }
+ .container-n1{
+    width: 540px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+ }
+ 
+ .comparison-table{
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1px solid green;
+   
+ }
+ 
+ .comparison-table td,th{
+     text-align: center;
+     padding: 12px;
+     border-right: 1px solid green;
+ }
+ .table-thead th:first-of-type{
+    background-color: #02bb8c;
+   
+ }
+ .table-thead th:nth-of-type(2){
+    background-color: #cdcdcd;  
+ }
+ .table-thead th:nth-of-type(3){
+    background-color: #cdcdcd;  
+ }
+ .comparison-table .title td:first-of-type{
+     background-color:  rgba(2,187,140,.3);
+ }
+ .comparison-table .score td:first-of-type{
+    background-color:  rgba(2,187,140,.3);
+ }
+ .comparison-table .action td:first-of-type{
+    background-color:  rgba(2,187,140,.3); 
+ }
+
+ .comparison-tbody tr:nth-of-type(3) td:first-of-type,.comparison-tbody tr:nth-of-type(4) td:first-of-type,.comparison-tbody tr:nth-of-type(5) td:first-of-type{
+    background-color:  rgba(2,187,140,.3);
+ }
+ .comparison-tbody tr:nth-of-type(1) td:first-of-type p, .comparison-tbody tr:nth-of-type(1) td:nth-of-type(2) p,.comparison-tbody tr:nth-of-type(1) td:nth-of-type(3) p{
+    font-weight: 600;
+    font-size: 26px;
+ }
+ .comparison-tbody tr:nth-of-type(2) td:nth-of-type(1) p:first-of-type,.comparison-tbody tr:nth-of-type(2) td:nth-of-type(2) p:first-of-type,.comparison-tbody tr:nth-of-type(2) td:nth-of-type(3) p:first-of-type{
+    font-size: 58px;
+    color: #29303b;
+    font-weight: 700;
+ }
+ .comparison-tbody tr:nth-of-type(6) td:nth-of-type(1) a, .comparison-tbody tr:nth-of-type(6) td:nth-of-type(2) a, .comparison-tbody tr:nth-of-type(6) td:nth-of-type(3) a{
+     text-decoration: none;
+ } 
+ .comparison-tbody tr:nth-of-type(6) button{
+     margin-bottom: 8px;
+ }
+ .score .star-rating{
+     color: #f4c150;
+ }
+ .coin_table-item{
+     display: grid;
+     width: 400px;
+     grid-template-columns: 250px 250px ;
+     grid-template-rows: auto auto auto;
+     text-align: center;
+     grid-gap: 10px;
+  
+     
+ }
+ .coin_table-item>div{
+     padding: 16px;
+ }
+ .coin_table-item .item-2{
+     grid-column: 1 / span 2;
+ }
