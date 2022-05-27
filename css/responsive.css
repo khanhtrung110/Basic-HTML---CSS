@@ -2,17 +2,50 @@
 
 /* >= Tablet */
 @media (min-width: 740px) {
-    .container{
-        width: 720px;
+    .container-n1{
+        width: 100%;
+        max-width: 720px;
         padding-left: 15px;
         padding-right: 15px;
         margin-left: auto;
         margin-right: auto;
-    }
+     }
     .cryptoCourses__item{
-        width: 45%
+        flex-basis: 45%;
+        margin: 10px 20px;
     }
+    .cryptoCourses__feature {
+        flex-direction: row;
+        flex-wrap: wrap;
 
+    }
+    .cypto__video-item .card-img-top {
+        max-width: 100%;
+    }
+    .coin_table-item{
+        flex-basis: 50%;
+        padding: 15px;
+    }
+    .tutorials-item{
+        flex-basis: 50%;
+    }
+    .top-coupons-item{
+        flex-basis: 45%;
+        margin: 15px;
+    }
+    .nftCollections_item{
+        flex-basis: 40%;
+        margin: 15px;
+    }
+    .newDapps__item{
+        flex-basis: 50%;
+    }
+    .lae-img{
+        flex-direction: row;
+    }
+    .cypto__video-item {
+        flex-basis: 50%;
+    }
 }
 
 
@@ -25,39 +58,75 @@
 
    
 /* Tablet - PC low resolution */
-@media (min-width: 740px) and (max-width: 1023px) {
-    .container{
-        width: 960px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-/* > PC low resolution */
-@media (min-width: 1024px) and (max-width: 1239px) {
-    .container{
-        width: 960px;
-        padding-left: 15px;
-        padding-right: 15px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-}
-@media (min-width: 1200px){
+@media (min-width: 992px) and (max-width: 1199px) {
     .container-n1{
-        width: 1140px;
+        max-width: 960px;
+        width: 100%;
         padding-left: 15px;
         padding-right: 15px;
         margin-left: auto;
         margin-right: auto;
      }
-    .container{
-        width: 1140px;
+
+    
+}
+
+@media (min-width: 1200px){
+    .container-n1{
+        max-width: 1140px;
+        width: 100%;
         padding-left: 15px;
         padding-right: 15px;
         margin-left: auto;
         margin-right: auto;
+     }
+     .trust-item{
+         flex-basis: calc(100%/6);
+     }
+     .cryptoCourses__feature {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
     }
+    .coin_table-item{
+        flex-basis: 50%;
+    }
+    .tutorials-item{
+        flex-basis: 25%;
+    }
+    .top-coupons-item{
+        flex-basis: 25%;
+        margin: 15px;
+    }
+    .nftCollections_item{
+        flex-basis: 20%;
+    }
+    .newDapps__item{
+        flex-basis: 25%;
+    }
+    .footer__item{
+        flex-basis: 15%;
+    }
+    .branding{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .cypto__video-item {
+        flex-basis: 25%;
+    }
+    .cryptoCourses__item{
+        flex-basis: 30%;
+    }
+    .lae-img img{
+        width: 100%;
+    }
+    .lea-setflex{
+        display: flex;
+        justify-content: space-around;
+
+    }
+
 }
 
