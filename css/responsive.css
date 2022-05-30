@@ -46,6 +46,19 @@
     .cypto__video-item {
         flex-basis: 50%;
     }
+    .nav-bars-btn{
+        display: none;
+    }
+    .nav-pc{
+        display: block;
+    }
+    .nav-link{
+        padding-left: 40px;
+    }
+
+    .logo {
+        margin-left: 15px;
+    }
 }
 
 
@@ -58,6 +71,22 @@
 
    
 /* Tablet - PC low resolution */
+@media (min-width: 992px){
+    .cryptoExchange__coupon{
+        flex-direction: row;
+        
+    }
+    .cryptoExchange__coupon-item:first-of-type{
+        flex-basis: 20%;
+    }
+    .cryptoExchange__coupon-item:last-of-type{
+        flex-basis: 50%;
+    }
+    .coupon_rating{
+        flex-basis: 30%;
+    }
+
+}
 @media (min-width: 992px) and (max-width: 1199px) {
     .container-n1{
         max-width: 960px;
